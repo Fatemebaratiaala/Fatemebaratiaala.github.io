@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fateme Barati Aala</title>
-  <meta name="description" content="Personal page of Fateme Barati Aala" />
+  <title>Fateme Barati Aala — Data Analyst & Backend Developer</title>
+  <meta name="description" content="Fateme Barati Aala — Data Analyst and Backend Developer with a passion for pure mathematics." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #0a0e1a;
       --card: rgba(255, 255, 255, 0.06);
       --border: rgba(255, 255, 255, 0.12);
       --text: #eef2fb;
-      --muted: #97a1bb;
+      --muted: #a3adc4;
       --accent: #ff6aa9;
       --accent2: #a855f7;
+      --accent3: #22d3ee;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; }
@@ -35,11 +36,11 @@
     }
     .card {
       width: 100%;
-      max-width: 620px;
+      max-width: 660px;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 26px;
-      padding: 44px 36px;
+      padding: 46px 40px;
       text-align: center;
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
@@ -71,18 +72,32 @@
     }
 
     .role {
-      color: var(--accent);
+      color: var(--accent3);
       font-weight: 600;
-      font-size: 0.95rem;
-      margin-top: 8px;
-      letter-spacing: 0.02em;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #d6bff7;
+      font-size: 1.02rem;
+      line-height: 1.75;
+      margin: 26px auto 18px;
+      max-width: 560px;
+      padding: 16px 20px;
+      border-left: 3px solid var(--accent2);
+      border-right: 3px solid var(--accent);
+      border-radius: 10px;
+      background: rgba(168, 85, 247, 0.08);
     }
 
     .bio {
       color: var(--muted);
       line-height: 1.9;
-      margin: 20px 0 30px;
+      margin: 6px 0 32px;
       font-size: 1rem;
     }
 
@@ -126,12 +141,13 @@
     @media (max-width: 480px) {
       .card { padding: 34px 22px; }
       .avatar { width: 112px; height: 112px; }
+      .quote { font-size: 0.95rem; }
     }
   </style>
 </head>
 <body>
   <main class="card">
-    <!-- عکس پروفایل مستقیماً از گیت‌هاب لود می‌شود -->
+    <!-- Profile picture loads directly from GitHub -->
     <img
       class="avatar"
       src="https://github.com/Fatemebaratiaala.png"
@@ -139,12 +155,16 @@
     />
 
     <h1>Fateme <span>Barati Aala</span></h1>
-    <p class="role">Web Developer</p>
+    <p class="role">Data Analyst &amp; Backend Developer</p>
+
+    <blockquote class="quote">
+      “Mathematics trains the mind to see abstract patterns;<br />
+      code gives those patterns a heartbeat.”
+    </blockquote>
 
     <p class="bio">
-      Hi! I'm Fateme, a passionate web developer who loves turning ideas into
-      clean, fast, and user-friendly web experiences. This is my little corner
-      of the internet — feel free to explore my projects on GitHub.
+      I am a Data Analyst and Backend Developer with a deep-rooted passion for
+      pure mathematics, algorithmic problem-solving, and efficient system design.
     </p>
 
     <div class="links">
