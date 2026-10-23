@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fateme Barati Aala</title>
+  <meta name="description" content="Personal page of Fateme Barati Aala" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --card: rgba(255, 255, 255, 0.06);
+      --border: rgba(255, 255, 255, 0.12);
+      --text: #eef2fb;
+      --muted: #97a1bb;
+      --accent: #ff6aa9;
+      --accent2: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+      background:
+        radial-gradient(1100px 600px at 85% -10%, #3a1d5e 0%, transparent 60%),
+        radial-gradient(900px 500px at 0% 110%, #4a1e3a 0%, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 620px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 44px 36px;
+      text-align: center;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+      animation: rise 0.7s ease both;
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+
+    .avatar {
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 0 0 8px rgba(168, 85, 247, 0.18);
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    h1 span {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .role {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: 8px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .bio {
+      color: var(--muted);
+      line-height: 1.9;
+      margin: 20px 0 30px;
+      font-size: 1rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.05);
+      transition: transform 0.18s ease, background 0.18s ease,
+                  border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.32);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    }
+    .btn svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+
+    footer {
+      margin-top: 34px;
+      color: #6b7592;
+      font-size: 0.8rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) { .card { animation: none; } }
+    @media (max-width: 480px) {
+      .card { padding: 34px 22px; }
+      .avatar { width: 112px; height: 112px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <!-- عکس پروفایل مستقیماً از گیت‌هاب لود می‌شود -->
+    <img
+      class="avatar"
+      src="https://github.com/Fatemebaratiaala.png"
+      alt="Fateme Barati Aala"
+    />
+
+    <h1>Fateme <span>Barati Aala</span></h1>
+    <p class="role">Web Developer</p>
+
+    <p class="bio">
+      Hi! I'm Fateme, a passionate web developer who loves turning ideas into
+      clean, fast, and user-friendly web experiences. This is my little corner
+      of the internet — feel free to explore my projects on GitHub.
+    </p>
+
+    <div class="links">
+      <a
+        class="btn"
+        href="https://github.com/Fatemebaratiaala"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        View my GitHub
+      </a>
+    </div>
+
+    <footer>Made with ❤️ &nbsp;·&nbsp; Hosted on GitHub Pages</footer>
+  </main>
+</body>
+</html>
